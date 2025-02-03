@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "warn" */
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -15,6 +16,10 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+    ],
+    'no-unused-vars': [
+      'warn',
+      { varsIgnorePattern: '^useState$' }
     ],
   },
 }
